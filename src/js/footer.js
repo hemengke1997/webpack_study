@@ -1,1 +1,0 @@
-import '../less/footer.less'
