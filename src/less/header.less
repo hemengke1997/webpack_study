@@ -1,0 +1,57 @@
+@import './common/common.less';
+@white:#fff;
+@media screen and (max-width:1920px) {
+    html {
+        font-size: 100px !important;
+    }
+}
+.header {
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    .logo {
+        float: left;
+        margin: 23px 0 0 58px;
+    }  
+    .right {
+        float: right;
+
+        .navigation {
+            float: left;
+            margin-top: 45px;
+            ul {
+                display: flex;
+                align-items: center;
+                li {
+                    margin: 0 34px;
+                    font-size: 15px;
+
+                    a {
+                        color: #75777b;      
+                    }
+                }
+                li.active {
+                    a {
+                        color: @white
+                    }
+                }
+            }
+        }
+
+        .download {
+            float: right;
+            margin: 20px 24px 0 34px;
+            background-color: @white;
+            width: 178px;  
+            height: 64px;
+            line-height: 64px;
+            text-align: center;
+            a {
+                color: #5113b3;
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+    }
+
+}
